@@ -1,6 +1,7 @@
 body {
 	margin:0  0 0.5em;
 }
+/* Header Styling start here */
 header{
 	display: flex;
 	flex-flow: row wrap;
@@ -22,11 +23,13 @@ header >h1{
     margin-block-end: 0em;
     margin-left: 1rem;
 }
+/*Header Styling End Here */
+/*Navigation Bar styling start here */
 nav{
 	width: 100vw;
 	height: 8vh;
 	align-content: center;
-	border-top: .2em groove #fffdd0;
+	border-top: .5em groove #ffffd0;
 	
 }
 nav > ul{
@@ -48,13 +51,17 @@ li  a{
 	display: block;
 	text-align: center;
 	text-decoration:none;
+	color:black;
 	padding: 1em;
 
 }
+/* Navigation Bar end here */
 main{
 	display: flex;
 	flex-flow: row wrap;
 }
+
+/* Slider start here */
 .slider
 {
 	height: 60vh;
@@ -70,13 +77,34 @@ main{
 	display: block;
 	position: absolute;
 	bottom: .2em;
-	background-color: #fffdd0;
-	opacity:.7 ;
+	background-color: #ffffff;
+	opacity:.9 ;
 	width:100vw;
+	max-height: 17vh;
+	color: gray;
+}
+.slider-heading{
+	font-size: 2rem;
+	margin-left: 2rem;
+}
+.slider-text{
+	margin-left: 4rem;
+	font-size: 1rem;
+}
+/* slider end here */
+/* Top new goes here */
+.top-news {
+	display: grid;
+	grid-template-columns:1fr;
+	border-bottom: .1em solid black;
+
+
 }
 
+.top
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 480px) {...}
+@media only screen and (min-width: 480px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -84,5 +112,6 @@ main{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...} 
+@media only screen and (min-width: 992px) {
+
 }

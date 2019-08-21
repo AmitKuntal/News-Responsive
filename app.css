@@ -139,5 +139,19 @@ main{
 }
 
 /* top news end here */
+.sport{
+	display: flex;
+	flex-flow: row wrap;
+	line-height: 2.5em;
+}
+.date{
+	width: 25vw;
+}
+.score{
+	width: 25vw;
+}
+.team{
+	width: 25vw;
+}
 
 }

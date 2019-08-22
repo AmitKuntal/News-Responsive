@@ -2,25 +2,7 @@ body {
 	margin:0 ;
 }
 /* Header Styling start here */
-
-/* top news end here */
-
-/* Sport start here */
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 480px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-	header{
+header{
 	display: flex;
 	flex-flow: row wrap;
 	height: 11vh;
@@ -139,19 +121,181 @@ main{
 }
 
 /* top news end here */
+
+
+/* Sport start here */
+
 .sport{
 	display: flex;
 	flex-flow: row wrap;
 	line-height: 2.5em;
+	text-align: center;
 }
 .date{
-	width: 25vw;
+	width: 20vw;
 }
 .score{
-	width: 25vw;
+	width: 30vw;
 }
 .team{
-	width: 25vw;
+	width: 20vw;
+}
+/* sports end here */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 480px) {
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	body {
+	margin:0 ;
+}
+/* Header Styling start here */
+header{
+	display: flex;
+	flex-flow: row wrap;
+	height: 11vh;
+	width: 100vw;	
+}
+header >img{
+	height: 100%;
+	width :7vw;
+	margin: 0 2em 0 0;
+}
+header >h1{
+	margin: 0 1em  0 0;
+	font-family: 'news cycle',san sarif;
+	font-size: 3rem;
+	text-align: center;
+	letter-spacing: .1em;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-left: 1rem;
+}
+/*Header Styling End Here */
+/*Navigation Bar styling start here */
+nav{
+	width: 100vw;
+	height: 8vh;
+	align-content: center;
+	border-top: .5em groove #ffffd0;
+	
+}
+nav > ul{
+	width: 80%;
+	list-style-type: none;
+	overflow: hidden;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-left: 10%;
+    font-family: 'Hepta Slab';
+
+}
+li{
+	float: left;
+	width: 25%;
+
+}
+li  a{
+	display: block;
+	text-align: center;
+	text-decoration:none;
+	color:black;
+	padding: 1em;
+
+}
+/* Navigation Bar end here */
+main{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/* Slider start here */
+.slider
+{
+	height: 60vh;
+	width: 100vw;
+	display: inline-flex;
+	position: relative;
+	} 
+	img{
+	height: 60vh;
+	width: 100vw;
+}
+.silder-content{
+	display: block;
+	position: absolute;
+	bottom: .2em;
+	background-color: #ffffff;
+	opacity:.9 ;
+	width:100vw;
+	max-height: 17vh;
+	color: gray;
+}
+.slider-heading{
+	font-size: 2rem;
+	margin-left: 2rem;
+}
+.slider-text{
+	margin-left: 4rem;
+	font-size: 1rem;
+}
+/* slider end here */
+/* Top new goes here */
+.top-news {
+	display: flex;
+	flex-flow: row wrap;
+}
+.top-news-content{
+	border-top: .1em solid gray;
+	border-bottom: .1em solid gray;
+	width: 100vw;
+	height: auto;
+	line-height: 2em;
+}
+.top-news-heading > h1{
+	width: 90vw;
+	display: inline-block;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+
+}
+.top-news-heading > a{
+	width: 10vw;
+}
+
+/* top news end here */
+
+
+/* Sport start here */
+
+.sport{
+	display: flex;
+	flex-flow: row wrap;
+	line-height: 2.5em;
+	text-align: center;
+}
+.date{
+	width: 20vw;
+}
+.score{
+	width: 30vw;
+}
+.team{
+	width: 20vw;
+}
+/* sports end here */
 }

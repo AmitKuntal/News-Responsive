@@ -7,6 +7,7 @@ header{
 	flex-flow: row wrap;
 	height: 11vh;
 	width: 100vw;	
+	border-bottom: .2em  solid gray;
 }
 header >img{
 	height: 100%;
@@ -327,7 +328,7 @@ header > a{
 }
 .sports-content:nth-of-type(odd){
 
-background-color: #7676ff;
+background-color: #DCDCDC	;
 
 }
 .sports-content:first-child{
@@ -444,14 +445,15 @@ background-color: #7676ff;
 .team{
 	width: 100%
 }
+.sports-content:nth-of-type(odd){
+
+background-color: #DCDCDC	;
+
+}
 .sports-content:first-child{
 	background-color: gray;
 }
-.sports-content:nth-of-type(odd){
 
-background-color: #7676ff;
-
-}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

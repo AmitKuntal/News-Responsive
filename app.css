@@ -1,13 +1,16 @@
 body {
-	margin:0 ;
+	margin-left:2.5em;
+	margin-right: 2.5em;
+	font-family: sans-serif;
 }
 /* Header Styling start here */
 header{
 	display: flex;
 	flex-flow: row wrap;
-	height: 11vh;
-	width: 100vw;	
-	border-bottom: .2em  solid gray;
+	height: 18vh;
+	width: 100%;	
+	padding-bottom: 1em;
+	box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.15);    	
 }
 header >img{
 	height: 100%;
@@ -15,7 +18,7 @@ header >img{
 	margin: 0 2em 0 0;
 }
 header >h1{
-	margin: 0 1em  0 0;
+	margin: 0 3em  0 0;
 	font-family: 'news cycle',san sarif;
 	font-size: 3rem;
 	text-align: center;
@@ -26,29 +29,24 @@ header >h1{
 }
 /*Header Styling End Here */
 /*Navigation Bar styling start here */
-nav{
-	width: 100vw;
-	height: 8vh;
-	align-content: center;
-	border-top: .5em groove #ffffd0;
-	
-}
 nav > ul{
-	width: 80%;
+	width: 100%;
 	list-style-type: none;
 	overflow: hidden;
 	margin-block-start: 0em;
     margin-block-end: 0em;
-    margin-left: 10%;
-    font-family: 'Hepta Slab';
+    font-family: 'Hepta Slab sarif';
+    font-size: 1.5em;
+    /*border-top: .2em groove white;*/
+     padding-inline-start: 0;
 
 }
-li{
+nav > ul > li{
 	float: left;
 	width: 25%;
 
 }
-li  a{
+nav > ul > li  a{
 	display: block;
 	text-align: center;
 	text-decoration:none;
@@ -63,87 +61,71 @@ main{
 }
 
 /* Slider start here */
-.slider
+.breaking-news
 {
-	height: 60vh;
-	width: 100vw;
 	display: inline-flex;
 	position: relative;
 	} 
-	img{
-	height: 60vh;
+	.breaking-news > img{
 	width: 100%;
 }
-.silder-content{
+.breaking-news-content{
 	display: block;
 	position: absolute;
 	bottom: .2em;
-	background-color: #ffffff;
-	opacity:.9 ;
-	width:100vw;
-	max-height: 17vh;
-	color: gray;
 }
-.slider-heading{
-	font-size: 2rem;
-	margin-left: 2rem;
+.breaking-news-heading{
+	font-size: 2em;
+	margin-block-start: 0;
+    margin-block-end: 0;
 }
-.slider-text{
-	margin-left: 4rem;
-	font-size: 1rem;
+.breaking-news-text{
+	 font-size: 1em;
+    float: right;
 }
 /* slider end here */
 /* Top new goes here */
 .top-news {
 	display: flex;
 	flex-flow: row wrap;
+	width: 100%;
+	border-bottom: .01em solid gray;
 }
-.top-news-content{
-	border-top: .1em solid gray;
-	border-bottom: .1em solid gray;
+.top-news-item{
+	border-top: .01em solid gray;
 	width: 100vw;
 	height: auto;
-	line-height: 2em;
+	line-height: 3em;
 }
+
 .top-news-heading > h1{
-	width: 90vw;
-	display: inline-block;
-    font-size: 2em;
+	display: inline;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
-
 
 }
 .top-news-heading > a{
-	width: 10vw;
+	float: right;
+	font-size: 1.5em;
 }
 
 /* top news end here */
 
 /* Sport start here */
-.sport{
+.sport tbody{
 	display: flex;
 	flex-flow: row wrap;
 	line-height: 2.5em;
 	text-align: center;
+	width: 100%;
+	font-size: 1.2em;
 }
 .sports-content{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	text-align: center;
-}
-.date{
-	width: 100%;
-}
-.score{
-	width: 100%;
-	
-}
-.team{
-	width: 100%
 }
 /*Sports end here*/
 /* weather starts here */
@@ -153,37 +135,34 @@ main{
 }
 .weather-place
 {
-	width: 100vw;
+	width: 100%;
 	display: grid;
 	grid-template-rows: 1fr;
 }
 .weather-today{
-	width: 100vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-.weather-today > img{
-	width: 20vw;
-	height: 10vh;
-
+.weather-today > h3 {
+	
+	display: block;
+    font-size: 4em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    margin-top: 0.6em;
 }
+
 .weather-forecast{
 	text-align: center;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.weather-forecast-info > img{
-	height: 20vh;
-	width: 10vw;
-}
-
-.weather-place > h2{
-	    margin-block-start: 0em;
-		margin-block-end: 0;
-}
-
 .weather-place > h4{
+	font-weight: normal;
     margin-block-start: 0em;
 	margin-block-end: 0;
 }
@@ -192,41 +171,89 @@ main{
 .latest-news {
 	display: flex;
 	flex-flow: row wrap;
+	width: 100%;
 }
-.latest-news-content{
+.latest-news-item{
 	height: auto;
 }
-.latest-news-heading{
-	width: 100vw;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border-bottom: .2rem solid gray;
+.latest-news-heading > h1{
+	display: inline;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
-
 
 }
 .latest-news-heading > a{
-	text-align: right;
-	width: 80%;
+	float: right;
+	font-size: 1.5em;
 }
-.latest-news-content > img{
-	width:10vw;
+.latest-news-item > img{
+	width:8vw;
 	height: 10vh;
 	float: left;
+	padding-right: 1em;
+}
+
+.latest-news-heading{
+	margin-top: 1em;
+	width: 100%;
+}
+.latest-news-heading > h1 {
+	font-size: 1.5em;
+	font-weight: normal;
+}
+.latest-news-item {
+	margin-top: 1em;
+}
+.latest-news-item > h3 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	font-weight: normal;
+	font-size: 1.4em;
+	
+}
+.latest-news-item > p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	font-weight: normal;
+	line-height: 1.3em;
+	
 }
 
 footer > ul{
 	width: 80%;
+	display: flex;
 	list-style-type: none;
 	overflow: hidden;
 	margin-block-start: 0em;
     margin-block-end: 0em;
     margin-left: 10%;
     font-family: 'Hepta Slab';
+}
+footer {
+	 margin-top: 4em;
+	border-top: .01em solid gray;
+	width: 100%;
+	box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.15);
+}
+footer > ul > li{
+	float: left;
+	width: 33%;
+
+
+}
+footer > ul > li  a{
+	display: block;
+	text-align: center;
+	text-decoration:none;
+	color:black;
+	font-size: .9em;
+	padding: 1em;
 
 }
 
@@ -235,56 +262,63 @@ footer > ul{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 470px) {
 				header{
-				display: grid;
-				grid-template-columns: 1fr auto 1fr;
+				height: auto;
 			}
 			header > h1{
-				font-size: 1.6rem;
+				font-size: 1.5em;
 				text-align: left;
-			    width: 60vw;
+			    width: 75%;
 			    float: left;
+			    margin:0;
+			    margin-top: 1em;
+			    margin-left: 0;
 			}
 			header >img{
 				width :12vw;
+				height: auto;
+				margin:0;
 			}
 			nav {
 				display: none;
 			}
-			header > a{
-				margin-top: 2em;
-				float: right;
+			.hamburger >div {
+			  width: 2.5em;
+			  height: .3em;
+			  background-color: gray;
+			  margin: .5em 0;
 			}
 
-			.slider
+			.breaking-news
 			{
 				height: 40vh;
 				order: 0;
 				} 
-				img{
+				
+				.breaking-news >img{
 				height: 40vh;
 				width: 100%;
 			}
-			.silder-content{
+			.breaking-news-content{
 				background-color: black;
 				opacity:.7 ;
 				width:100%;
 				color: white;
 			}
-			.slider-heading{
+			.breaking-news-heading{
 				font-size: 1.2rem;
-				margin-left: 2rem;
 			}
-			.slider-text{
-				margin-left:2rem;
-				font-size: .8rem;
+			.breaking-news-text{
+							font-size: .8rem;
 			}
-			.top-news-content{
-				font-size: .9em;
-			}
-			.top-news-heading > h1{
-				
-			    font-size: 1.2em;  
-			}
+			.top-news-heading{
+					width: 100%;
+					margin-top: 2em;
+				}
+				.top-news-heading > h1{
+						width: 80%;
+						font-size: 1.5em;
+						font-weight: normal;
+				}	
 			.sports-content{
 				width: 100%;
 			}
@@ -299,7 +333,7 @@ footer > ul{
 			.latest-news-heading > h1{
 				font-size: 1.2em;
 			}
-			.latest-news-content > h3{
+			.latest-news-item > h3{
 				font-size: .9em;
 			}
 			.laest-news-content > p{
@@ -313,50 +347,60 @@ footer > ul{
 					display: unset;
 				}
 				header > h1 {
-					font-size: 3rem;
+					font-size: 3em;
+					text-align: left;
+    				margin-top: .7em;
 				}
-				header > a{
+				.hamburger{
 					display: none;
 				}
 				
-				.slider
+				.breaking-news
 				{
-					width: 45vw;
+					width: 50%;
+					height: auto;
 					order: -2;
 					}
-				.silder-content{
+				.breaking-news > img {
+					height: auto;
+				}
+
+				.breaking-news-content{
 					background-color: black;
 					opacity:.7 ;
 					width:100%;
 					color: white;
 				}
-				.slider-heading{
+				.breaking-news-heading{
 					font-size: 1rem;
-				}
-				.slider-text{
-					margin-left:2rem;
 				}
 				.weather{
 				display: flex;
 				flex-flow: row wrap;
 				order: -1;
-				width: 50vw;
+				width: 50%;
+				}
+				.top-news-heading{
+					width: 100%;
+					margin-top: 2em;
+				}
+				.top-news-heading > h1{
+						width: 80%;
+						font-size: 1.5em;
+						font-weight: normal;
 				}
 				.weather-place
 				{
 					width: 100%;
 					display: grid;
 					grid-template-rows: 1fr;
+					margin-left: 1em;
+					font-weight: normal;
 				}
 				.weather-today{
 					width: 100%;
 					display: grid;
 					grid-template-columns: 25% 75%;
-				}
-				.weather-today > img{
-					width: 100%;
-					height: 100%;
-
 				}
 				.weather-forecast{
 					text-align: center;
@@ -364,15 +408,20 @@ footer > ul{
 					display: grid;
 					grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 				}
-				.weather-forecast-info > img{
-					height: 30%;
-					width: 30%;
+				.weather-forecast-info > h5 {
+					font-weight: normal;
 				}
 				.weather-place > h2
 				{
 					font-size: 1rem;
+					font-weight: normal;
 				}
-				.sports-content{
+				.weather-today > h3{
+					font-size: 2em;
+					text-align: center;
+
+				}
+				.sports-content{	
 					width: 100%;
 				}
 				
@@ -382,7 +431,15 @@ footer > ul{
 
 				}
 				.sports-content:first-child{
+					margin-top: 1em;
 					background-color: gray;
+				}
+				.latest-news-item > img {
+					width: auto;
+					height: 15vh;
+				}
+				.latest-news-item > h3 {
+					font-size:1.1em;				
 				}
 
 }
@@ -390,13 +447,43 @@ footer > ul{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 						header > h1 {
-							font-size: 3rem;
+							font-size: 3.5em;
+							text-align: left;
+							margin-top: .7em;
 						}
 				   		nav{
 							display: unset;					
 						}
-						.slider{
-							width: 100vw;
+						.breaking-news{
+							width: 100%;
+							height: 60vh;
+						}
+						.breaking-news > img{
+							width: 100%;
+							height: auto;
+						}
+						.breaking-news-heading {
+						    font-size: 2em;
+						}
+						.breaking-news-content {
+							background-color: #ffffff;
+							opacity:.9 ;
+							width:100%;
+							max-height: 17vh;
+							color: gray;
+						}
+						.breaking-news-text {	
+						    font-size: 1.3em;
+						}
+						.top-news-heading{
+							margin-top: 2em;
+							width: 100%;
+						}
+						.top-news-heading > h1 {
+							font-size: 1.5em;
+						}
+						.top-news-item {
+							font-size: 1.2em;
 						}
 						.sports-content:first-child{
 							background-color: white;
@@ -407,7 +494,54 @@ footer > ul{
 
 						}
 						.weather{
-							width: 100vw;	
+							width: 100%;	
 							order:0;
 						}
+						.weather-place > h2{
+						    margin-block-start: 0em;
+							margin-block-end: 0;
+							font-size: 1.5em;
+							font-weight: normal;
+							font-family: sans-serif;
+						}
+						.weather-place > h4 {
+						    margin-block-start: 0em;
+						    margin-block-end: 0;
+						    font-size: 1.2em;
+						    font-weight: normal;
+						}
+						.weather-today > img {
+							width: 100%;
+						}
+						.weather-today > h3 {
+						    font-size: 4em;
+						    
+						    text-align: left;
+						}
+						.weather-forecast-info > h5 {
+							display: block;
+							font-size: 1em;
+							margin-block-start: 0em;
+							margin-block-end: 0em;
+							margin-inline-start: 0px;
+							margin-inline-end: 0px;
+							font-weight: normal;
+						}
+						.weather-forecast-info > img {
+							width: 60%;
+						}
+						.latest-news-heading{
+							margin-top: 1em;
+							width: 100%;
+						}
+						.latest-news-heading > h1 {
+							font-size: 1.5em;
+							font-weight: normal;
+						}
+						.latest-news-item {
+							margin-top: 1em;
+						}
+						
+						
+
 }
